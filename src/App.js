@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home'
+import routes from './routes'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="App-header">
        
         <Home/>
+        {routes}
       </header>
     </div>
   );
