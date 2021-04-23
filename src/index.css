@@ -18,6 +18,8 @@ code {
 
 body {
   margin: 0px;
+  height: 100vh;
+  width: 100vw;
   font-family: 'segoe ui';
   background: linear-gradient(-45deg, #255F85, #481D24, #C5283D, #E9724C );
   background-size: 400%, 400%;
@@ -54,6 +56,7 @@ body {
   font-size: 22px;
   color: #fff;
   padding: 10px 10px 10px 10px;
+ 
 }
 
 .nav > .nav-btn {
@@ -81,7 +84,9 @@ body {
   display: none;
 }
 
-@media (max-width:600px) {
+
+
+@media (max-width:1000px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -125,4 +130,64 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+}
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box1{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 20%;
+  margin-top: 100px;
+  box-shadow: 3px 3px 5px 6px #333;
+  color: black;
+  text-align: center;
+}
+.box2{
+  /* flex-direction: row; */
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 20%;
+  margin-top: 100px;
+  box-shadow: 3px 3px 5px 6px #333;
+  color: black;
+  text-align: center;
+}
+.box3{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 20%;
+  margin-top: 100px;
+  box-shadow: 3px 3px 5px 6px #333;
+  color: black;
+  text-align: center;
+}
+
+.box1:hover,
+.box1:focus{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.45em);
+}
+.box2:hover,
+.box2:focus{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.45em);
+}
+.box3:hover,
+.box3:focus{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.45em);
+}
+
+h3{
+  margin-top: 50px;
 }

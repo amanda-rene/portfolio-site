@@ -1,37 +1,25 @@
-import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
+import React from 'react'
 
-class Home extends Component{
 
-   render(){
-       return(
-        <div class="nav">
-        <input type="checkbox" id="nav-check"/>
-        <div class="nav-header">
-          <div class="nav-title">
-            <header>Amanda White</header>
-          </div>
+
+function Home(){
+    return(<div>
+        <div style={{textAlign: 'center'}}>
+            <h3 >I'm Amanda and this is my portfolio site</h3>
+                <p> I am a Full Stack developer with industry experience building websites and web applications. As a freelance developer I strive to build
+                     immersive web applications through carefully crafted code and user-centric design.
+                <br></br> <br></br> With experience in HTML5, CSS3, SASS, Responsive Design, Javascript, React, Redux, PostgreSQL, NodeJS, RESTful Routes/API/Axios,  ExpressJS, Git/Github I have 
+                all the tools required to build immersive Full Stack Web Applications! </p>
         </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
+        <div className='container'>
         
-        <div class="nav-links">
-         
-          <Link to='/about'>About</Link>
-          <a href="http://stackoverflow.com/users/4084003/" target="_blank">Portfolio</a>
-          <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Resume</a>
-          <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Contact</a>
-         
+        <div className='box1'><p>Responsive Design</p></div>
+        <div className='box2'><p>Intuitive UI</p></div>
+        <div className='box3'><p>Full Stack Web Apps</p></div>
         </div>
-      </div>
-
-        
-       )
-   }
+       
+    </div>
+    )
 }
+
 export default Home;
